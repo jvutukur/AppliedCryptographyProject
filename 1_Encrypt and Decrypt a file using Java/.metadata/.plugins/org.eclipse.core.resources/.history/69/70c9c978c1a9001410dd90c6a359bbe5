@@ -1,0 +1,63 @@
+import java.io.*;
+
+public class ReadWriteOfFile {
+	byte data[];
+	String fileName;
+	byte cipherText[];
+	byte decryptedPlainText[];
+	String key="";
+	
+	public void readFileNameAndKey()
+	{		
+		System.out.println("Enter the file Name");
+        java.util.Scanner s=new java.util.Scanner(System.in);
+		fileName=s.nextLine();
+        
+    	System.out.println("Enter the key 4 charecters");
+        key=s.next();
+	}
+	
+	public void readImageFile()
+	{
+		System.out.println(fileName);
+		File file=new File(fileName);
+		try
+		{
+			FileInputStream fis = new FileInputStream(file);
+			System.out.println("file Length is"+file.length());
+			//System.out.println((int)file.length());			
+			byte data[] = new byte[(int) file.length()];
+			//System.out.println(imageData.length); 
+			fis.read(data);
+			 
+			// writeImageToFile(data, "check ByteArray.jpg");
+			 //System.out.println(data.length());
+			// writeImageToFile(s2, "check String.jpg");
+			 fis.close();
+			
+		}
+		catch(Exception e)
+		{
+		e.printStackTrace();
+	    }
+	}
+	public void writeImageToFile(byte imgData[],String outputFileName)
+	{
+		FileOutputStream imageOutFile;
+		try {
+			imageOutFile = new FileOutputStream(outputFileName);
+			imageOutFile.write(imgData);
+			imageOutFile.close();
+		} 
+		
+		catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+			
+	}
+				
+		
+		
+	} 
+
+}

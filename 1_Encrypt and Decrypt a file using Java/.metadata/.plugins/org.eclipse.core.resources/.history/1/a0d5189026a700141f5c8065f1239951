@@ -1,0 +1,24 @@
+import java.io.BufferedReader;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+import java.io.PrintWriter;
+
+
+public class Decryption {
+
+String encrytedData=""; 
+String fileName;
+String plainText="";
+
+
+public void blockDecrypt(String key32Bit,String cipherText32Bit)
+{
+	
+	for(int i = 0; i < cipherText32Bit.length(); i++)
+		s=s+(char)(plainText32Bit.charAt(i) ^ key32Bit.charAt(i));
+	System.out.println(s);
+  plainText=plainText.concat(s);
+}
+
+}

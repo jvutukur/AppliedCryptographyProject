@@ -1,0 +1,26 @@
+what,kind,bundleId,bundleVersion,description,time
+java.runtime.name,sysinfo,,,"Java(TM) SE Runtime Environment",1424484965800
+java.runtime.version,sysinfo,,,"1.8.0_31-b13",1424484965800
+java.specification.name,sysinfo,,,"Java Platform API Specification",1424484965800
+java.specification.vendor,sysinfo,,,"Oracle Corporation",1424484965800
+java.specification.version,sysinfo,,,"1.8",1424484965800
+java.vendor,sysinfo,,,"Oracle Corporation",1424484965800
+java.version,sysinfo,,,"1.8.0_31",1424484965800
+java.vm.info,sysinfo,,,"mixed mode",1424484965800
+java.vm.name,sysinfo,,,"Java HotSpot(TM) Client VM",1424484965800
+java.vm.specification.name,sysinfo,,,"Java Virtual Machine Specification",1424484965800
+java.vm.specification.vendor,sysinfo,,,"Oracle Corporation",1424484965800
+java.vm.specification.version,sysinfo,,,"1.8",1424484965800
+java.vm.vendor,sysinfo,,,"Oracle Corporation",1424484965800
+java.vm.version,sysinfo,,,"25.31-b07",1424484965800
+started,bundle,org.eclipse.mylyn.tasks.ui,3.2.0.v20090617-0100-e3x,"org.eclipse.mylyn.tasks.ui",1424484965899
+started,bundle,org.eclipse.mylyn.team.ui,3.2.0.v20090617-0100-e3x,"org.eclipse.mylyn.team.ui",1424484965956
+started,bundle,org.eclipse.update.scheduler,3.2.200.v20081127,"org.eclipse.update.scheduler",1424484965996
+started,bundle,org.eclipse.update.core,3.2.300.v20090525,"org.eclipse.update.core",1424484966078
+started,bundle,org.eclipse.wst.ws.service.policy.ui,1.0.102.v200903070248,"org.eclipse.wst.ws.service.policy.ui",1424484966149
+started,bundle,org.eclipse.mylyn.monitor.ui,3.2.0.v20090617-0100-e3x,"org.eclipse.mylyn.monitor.ui",1424484966373
+started,bundle,org.eclipse.jsch.core,1.1.100.I20090430-0408,"org.eclipse.jsch.core",1424484968254
+started,bundle,org.eclipse.team.cvs.core,3.3.200.I20090430-0408,"org.eclipse.team.cvs.core",1424484968255
+started,bundle,org.eclipse.team.ui,3.5.0.I20090430-0408,"org.eclipse.team.ui",1424484968551
+started,bundle,org.eclipse.ui.console,3.4.0.v20090513,"org.eclipse.ui.console",1424484968792
+started,bundle,org.eclipse.team.cvs.ui,3.3.200.I20090521-1750,"org.eclipse.team.cvs.ui",1424484969146

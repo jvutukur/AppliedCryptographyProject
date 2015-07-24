@@ -1,0 +1,32 @@
+• Navigate to folder containing the programs
+• complie and run files as metioned below.
+
+1a)
+g++ 1a_RSA_Random_Prime_Numbers.cpp RSA.cpp BigInt.cpp -o 1a
+
+./1a
+
+1b)
+g++ 1b_RSA_One_Random_Prime_Number.cpp RSA.cpp BigInt.cpp -o 1b
+
+./1b
+
+1c)
+g++ 1c_RSA_Selected_Prime_Numbers.cpp RSA.cpp BigInt.cpp -o 1c
+
+./1c
+
+1d)
+g++ 1d_RSA_Non_Primes.cpp RSA.cpp BigInt.cpp -o 1d
+
+./1d
+
+2)
+g++ 2_RSA_Challenge_Response.cpp RSA.cpp BigInt.cpp -o 2
+
+./2
+
+3)
+g++ 3_RSA_Blind_Signature.cpp RSA.cpp BigInt.cpp -o 3
+
+./3

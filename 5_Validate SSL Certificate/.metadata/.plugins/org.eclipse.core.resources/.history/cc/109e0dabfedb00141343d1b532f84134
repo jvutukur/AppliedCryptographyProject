@@ -1,0 +1,25 @@
+import java.io.FileInputStream;
+import java.security.KeyStore;
+import java.security.cert.CertificateFactory;
+import java.security.cert.X509Certificate;
+import java.util.Scanner;
+
+public class GetPrivateKey {
+	private static Scanner s;
+	public void getPrivateKey() {
+		try {
+			System.out.println("Enter the name of the certificate which needs to be printed");
+			s = new Scanner(System.in);
+			String fileName = s.next();
+			FileInputStream fis = new FileInputStream(fileName);
+			CertificateFactory cf = CertificateFactory.getInstance("X509");
+			X509Certificate certificate = (X509Certificate) cf.generateCertificate(certificateFis);
+			
+			 
+			KeyStore ks=KeyStore.getInstance("pkcs12","SunJSSE");
+			ks.load(fis,"password".toCharArray());
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+}

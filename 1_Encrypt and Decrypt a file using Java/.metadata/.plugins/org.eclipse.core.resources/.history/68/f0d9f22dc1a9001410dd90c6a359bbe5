@@ -1,0 +1,22 @@
+import java.io.*;
+
+public class ReadWriteOfFile {
+	byte data[];
+	String fileName;
+	byte cipherText[];
+	byte decryptedPlainText[];
+	String key="";
+	
+	public void readFileNameAndKey()
+	{		
+		System.out.println("Enter the file Name");
+        java.util.Scanner s=new java.util.Scanner(System.in);
+		fileName=s.nextLine();
+        
+    	System.out.println("Enter the key 4 charecters");
+        key=s.next();
+	}
+	
+	
+
+}

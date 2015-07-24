@@ -1,0 +1,12 @@
+
+public class Validate {
+
+	public static void main(String[] args) {
+	
+		char key='a';
+		char msg='b';
+		
+		System.out.println(key^msg);
+		
+}
+}

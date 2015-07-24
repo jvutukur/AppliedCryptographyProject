@@ -1,0 +1,22 @@
+
+
+
+public class Decryption extends ReadWriteOfFile  {
+
+String encrytedData=""; 
+String fileName;
+String plainText="";
+
+
+public void blockDecrypt(String key32Bit,String cipherText32Bit)
+{
+	String s=new String();
+	for(int i = 0; i < cipherText32Bit.length(); i++)
+	{
+		s=s+(char)(cipherText32Bit.charAt(i) ^ key32Bit.charAt(i));
+	}
+		System.out.println(s);
+  plainText=plainText.concat(s);
+}
+
+}

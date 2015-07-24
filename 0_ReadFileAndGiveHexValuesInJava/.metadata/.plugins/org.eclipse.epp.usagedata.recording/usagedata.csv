@@ -1,0 +1,11 @@
+what,kind,bundleId,bundleVersion,description,time
+started,bundle,org.eclipse.jst.jsf.core,1.2.0.v20090514,"org.eclipse.jst.jsf.core",1424800578783
+started,bundle,org.eclipse.mylyn.team.ui,3.2.0.v20090617-0100-e3x,"org.eclipse.mylyn.team.ui",1424800578989
+started,bundle,org.eclipse.update.scheduler,3.2.200.v20081127,"org.eclipse.update.scheduler",1424800579014
+started,bundle,org.eclipse.update.core,3.2.300.v20090525,"org.eclipse.update.core",1424800579139
+started,bundle,org.eclipse.wst.ws.service.policy.ui,1.0.102.v200903070248,"org.eclipse.wst.ws.service.policy.ui",1424800579176
+started,bundle,org.eclipse.jst.common.project.facet.core,1.4.0.v200906080500,"org.eclipse.jst.common.project.facet.core",1424800582890
+deactivated,workbench,org.eclipse.ui.workbench,3.5.0.I20090603-2000,"",1424800599625
+activated,workbench,org.eclipse.ui.workbench,3.5.0.I20090603-2000,"",1424800601470
+closed,workbench,org.eclipse.ui.workbench,3.5.0.I20090603-2000,"",1424800601743
+stopped,bundle,org.eclipse.jst.ws.axis.creation.ui,1.0.406.v200903031852,"org.eclipse.jst.ws.axis.creation.ui",1424800604604

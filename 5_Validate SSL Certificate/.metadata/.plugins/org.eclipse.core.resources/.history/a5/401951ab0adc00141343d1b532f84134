@@ -1,0 +1,15 @@
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+
+
+public class PrintSignatureOnTACertificate {
+public static void main(String[] args) {
+	try {
+		FileInputStream fis = new FileInputStream("TrustCenter.cer");
+	} catch (Exception e) {
+		// TODO Auto-generated catch block
+		e.printStackTrace();
+	}
+	
+}
+}

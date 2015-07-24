@@ -1,0 +1,48 @@
+
+public class Encrypt extends ReadWriteOfFile{
+
+	
+	byte output32Bit[]=new byte[4];
+	int count;
+	
+public void blockEncrypt(byte input32Bit[],byte key32Bit[])
+{
+	for(int i = 0; i < 4; i++)
+	{
+		output32Bit[i]=(byte)(input32Bit[i] ^ key32Bit[i]);					
+		count++;
+	}        
+	// input32Bit[]=shiftBits(output32Bit,1);
+	//Xor
+	
+	// input32Bit[]=shiftBits(output32Bit,1);
+	//byte reverseKey32Bit[]=reverseKey(key32Bit); 
+	//Xor with reverse of key
+	
+	for(int j=count-4,i=0;i<4;j++,i++)
+	{
+		cipherText[j]=output32Bit[i];
+	}
+}
+
+
+public byte[] shiftBits(int shiftValue,byte input[])
+{
+	byte output[]=new byte[4];
+	  for (int i=0; i<4; i++) {
+	         int val = getBit(input,(i+step)%4);
+	         setBit(output,i,val);
+	  }
+	return output;
+}
+public byte[] reverseKey(byte input[])
+{
+	byte reverseKey[]=new byte[4];
+	reverseKey[0]=input[3];
+	reverseKey[0]=input[2];
+	reverseKey[0]=input[1];
+	reverseKey[0]=input[0];
+	
+	return reverseKey;
+}
+}

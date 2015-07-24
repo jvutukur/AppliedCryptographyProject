@@ -1,0 +1,26 @@
+
+public class Decryption extends ReadWriteOfFile {
+	byte output32Bit[]=new byte[4];
+	int count;
+	
+public void blockDecryption(byte input32Bit[],byte key32Bit[])
+{
+	for(int i = 0; i < 4; i++)
+	{
+		output32Bit[i]=(byte)(input32Bit[i] ^ key32Bit[i]);					
+		count++;
+	}        
+	// input32Bit[]=shiftBits(output32Bit,1);
+	//Xor
+	
+	// input32Bit[]=shiftBits(output32Bit,1);
+	//Xor with reverse of key
+	
+	for(int j=count-4,i=0;i<4;j++,i++)
+	{
+		[j]=output32Bit[i];
+	}
+}
+
+
+}

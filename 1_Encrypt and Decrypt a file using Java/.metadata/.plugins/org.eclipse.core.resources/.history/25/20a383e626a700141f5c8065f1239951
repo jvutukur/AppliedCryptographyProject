@@ -1,0 +1,30 @@
+
+
+public class Encrypt {
+ 
+	String originalData=""; 
+	String fileName;
+	String cipherText="";
+	
+	public void blockEncrypt(String key32Bit,String plainText32Bit)
+	{
+		
+		String s=new String();
+		for(int i = 0; i < plainText32Bit.length(); i++)
+		{
+			s=s+(char)(plainText32Bit.charAt(i) ^ key32Bit.charAt(i));
+      		
+      System.out.println(s);
+      cipherText=cipherText.concat(s);
+	}
+	
+	
+	}
+}
+
+	
+
+        
+	
+	
+	

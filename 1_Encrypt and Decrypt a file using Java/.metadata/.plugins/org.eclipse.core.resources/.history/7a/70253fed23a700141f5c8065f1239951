@@ -1,0 +1,62 @@
+import java.io.BufferedReader;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+import java.io.PrintWriter;
+
+
+public class Decryption {
+
+String encrytedData=""; 
+String fileName;
+String plainText="";
+public void readDatafromFile()
+{
+	System.out.println(fileName);
+    try
+    {
+        FileReader fileReader = new FileReader(fileName);           
+        BufferedReader bufferedReader = new BufferedReader(fileReader);
+        String line = null;
+        while((line = bufferedReader.readLine()) != null)
+        {        	
+        	encrytedData=encrytedData.concat(line);
+        	line="\n"+line;
+    }                
+        System.out.println(encrytedData);
+        bufferedReader.close();
+      }
+        catch(FileNotFoundException ex) {
+            System.err.println("Unable to open file: " + fileName); 
+            System.exit(0);
+        }
+        catch(IOException ex) {
+            System.err.println("Error reading file: " + fileName);    
+            System.exit(0);
+        }
+}
+
+
+public void blockDecrypt(String key32Bit,String cipherText32Bit)
+{
+	StringBuilder sb = new StringBuilder();
+	for(int i = 0; i < cipherText32Bit.length(); i++)
+	    sb.append((char)((int)cipherText32Bit.charAt(i) ^ key32Bit.charAt(i)));
+  String s=sb.toString();		
+System.out.println(s);
+  plainText=plainText.concat(s);
+}
+
+public void writeCipherTextInOutFile()
+{
+	try
+	{
+PrintWriter writer = new PrintWriter("decrypt.txt", "UTF-8");
+    writer.println(plainText);
+    writer.close();	
+	}
+    catch (Exception e) {
+		e.printStackTrace();}
+
+}
+}

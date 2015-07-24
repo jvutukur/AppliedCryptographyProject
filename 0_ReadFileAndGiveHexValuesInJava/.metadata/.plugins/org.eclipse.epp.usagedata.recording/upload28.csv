@@ -1,0 +1,26 @@
+what,kind,bundleId,bundleVersion,description,time
+started,bundle,org.eclipse.update.configurator,3.3.0.v20090312,"org.eclipse.update.configurator",1424504990687
+started,bundle,org.eclipse.update.core,3.2.300.v20090525,"org.eclipse.update.core",1424504990722
+started,bundle,org.eclipse.update.scheduler,3.2.200.v20081127,"org.eclipse.update.scheduler",1424504990723
+started,bundle,org.eclipse.wst.common.frameworks,1.1.300.v200904160730,"org.eclipse.wst.common.frameworks",1424504990724
+started,bundle,org.eclipse.wst.common.project.facet.core,1.4.0.v200906080535,"org.eclipse.wst.common.project.facet.core",1424504990724
+started,bundle,org.eclipse.wst.web,1.1.300.v200901261500,"org.eclipse.wst.web",1424504990725
+started,bundle,org.eclipse.wst.ws.service.policy.ui,1.0.102.v200903070248,"org.eclipse.wst.ws.service.policy.ui",1424504990726
+os,sysinfo,,,"win32",1424504990731
+arch,sysinfo,,,"x86",1424504990731
+ws,sysinfo,,,"win32",1424504990731
+locale,sysinfo,,,"en_IN",1424504990731
+processors,sysinfo,,,"4",1424504990731
+java.runtime.name,sysinfo,,,"Java(TM) SE Runtime Environment",1424504990731
+java.runtime.version,sysinfo,,,"1.8.0_31-b13",1424504990731
+java.specification.name,sysinfo,,,"Java Platform API Specification",1424504990731
+java.specification.vendor,sysinfo,,,"Oracle Corporation",1424504990731
+java.specification.version,sysinfo,,,"1.8",1424504990731
+java.vendor,sysinfo,,,"Oracle Corporation",1424504990731
+java.version,sysinfo,,,"1.8.0_31",1424504990731
+java.vm.info,sysinfo,,,"mixed mode",1424504990731
+java.vm.name,sysinfo,,,"Java HotSpot(TM) Client VM",1424504990731
+java.vm.specification.name,sysinfo,,,"Java Virtual Machine Specification",1424504990731
+java.vm.specification.vendor,sysinfo,,,"Oracle Corporation",1424504990731
+java.vm.specification.version,sysinfo,,,"1.8",1424504990731
+java.vm.vendor,sysinfo,,,"Oracle Corporation",1424504990731

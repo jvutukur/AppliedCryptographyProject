@@ -1,0 +1,114 @@
+
+import java.io.*;
+//import java.awt.image.BufferedImage;
+//import javax.imageio.ImageIO;
+//import com.sun.org.apache.xerces.internal.impl.dv.util.Base64;
+ 
+
+public class ReadWriteOfFile {
+
+	String data=""; 
+	String fileName;
+	String cipherText=new String();
+	String decryptedPlainText=new String();
+	String key="";
+	
+	public void readFileNameAndKey()
+	{		
+		System.out.println("Enter the file Name");
+        java.util.Scanner s=new java.util.Scanner(System.in);
+		fileName=s.nextLine();
+        
+    	System.out.println("Enter the key 4 charecters");
+        key=s.next();
+	}
+	
+	public void readDatafromFile()
+	{
+		//System.out.println(fileName);
+        try
+        {
+            FileReader fileReader = new FileReader(fileName);           
+            BufferedReader bufferedReader = new BufferedReader(fileReader);
+            String line = new String();
+            while((line = bufferedReader.readLine()) != null)
+            {            	               
+	          data=data.concat(line)+"\n";            	
+        }                
+            //System.out.println("Original Data is"+data);
+            data=data.substring(0,data.length()-1);
+            bufferedReader.close();
+          }
+            catch(FileNotFoundException ex) {
+	            System.err.println("Unable to open file: " + fileName); 
+	            System.exit(0);
+	        }
+	        catch(IOException ex) {
+	            System.err.println("Error reading file: " + fileName);    
+	            System.exit(0);
+	        }
+	}
+	
+	public void writeTextToFile(String text,String outputFileName)
+	{
+		PrintWriter writer;
+		try {
+			writer = new PrintWriter(outputFileName, "UTF-8");
+        writer.print(text);
+        writer.close();	
+         } 
+        catch (Exception e) {
+			e.printStackTrace();}
+	}
+	
+	public void readImageFile()
+	{
+		System.out.println(fileName);
+		File file=new File(fileName);
+		try
+		{
+			FileInputStream imageInFile = new FileInputStream(file);
+			System.out.println("file Length is"+file.length());
+			//System.out.println((int)file.length());			
+			byte imageData[] = new byte[(int) file.length()];
+			//System.out.println(imageData.length); 
+			imageInFile.read(imageData);
+			 String s2=new String(imageData);
+			 data=s2;
+			 //System.out.println(data.length());
+			 imageInFile.close();
+			
+			/*
+			FileInputStream imageInFile = new FileInputStream(file);
+			 byte imageData[] = new byte[(int) file.length()];
+			 imageInFile.read(imageData);
+			 data = imageData.toString();
+			 imageInFile.close();*/
+		}
+		catch(Exception e)
+		{
+		e.printStackTrace();
+	    }
+	}
+	public void writeImageToFile(String text,String outputFileName)
+	{
+		
+		try {
+			FileOutputStream imageOutFile = new FileOutputStream(outputFileName);
+			byte[] imageByteArray = text.getBytes();
+			imageOutFile.write(imageByteArray);
+			imageOutFile.close();
+			
+		} 
+		
+		catch (Exception e) {
+			
+			e.printStackTrace();
+		}
+		
+	}
+		 
+		
+		
+	
+}

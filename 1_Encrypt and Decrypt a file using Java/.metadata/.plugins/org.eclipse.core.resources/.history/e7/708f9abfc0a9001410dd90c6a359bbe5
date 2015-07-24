@@ -1,0 +1,10 @@
+import java.io.*;
+
+public class ReadWriteOfFile {
+	byte data[];
+	String fileName;
+	String cipherText=new String();
+	String decryptedPlainText=new String()
+	String key="";
+
+}

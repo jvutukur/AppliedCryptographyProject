@@ -1,0 +1,36 @@
+import java.io.FileInputStream;
+import java.security.Key;
+import java.security.KeyStore;
+import java.security.cert.CertificateFactory;
+import java.security.cert.X509Certificate;
+import java.util.Scanner;
+
+
+public class GetPrivateKey {
+	private static Scanner s;
+	public static void main(String[] args)
+	{
+		try {
+			System.out.println("Enter the name of file which has private key");
+			s = new Scanner(System.in);
+			String fileName = s.next();
+			FileInputStream fis = new FileInputStream(fileName);					
+			 
+			KeyStore ks=KeyStore.getInstance("pkcs12","SunJSSE");
+		
+       ks.load(fis,"raghu".toCharArray());
+       
+       String alias = ks.aliases().nextElement();
+       
+       
+			Key key = ks.getKey(alias, "raghu".toCharArray());
+			String privateKey = key.getRsaPem();
+			//ks.load(fis,"password".toCharArray());
+			System.out.println();
+			X509Certificate certificate = (X509Certificate)ks.getCertificate(alias);
+			System.out.println(certificate.toString());
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+}

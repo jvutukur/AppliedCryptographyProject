@@ -1,0 +1,23 @@
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.security.cert.CertificateFactory;
+import java.security.cert.X509Certificate;
+
+
+public class PrintSignatureOnTACertificate {
+public static void main(String[] args) {
+	try {
+		FileInputStream fis = new FileInputStream("TrustCenter.cer");
+		CertificateFactory cf = CertificateFactory.getInstance("X509");
+		X509Certificate certificate = (X509Certificate) cf.generateCertificate(fis);
+		
+		
+		
+	} 
+	catch (Exception e) {
+		// TODO Auto-generated catch block
+		e.printStackTrace();
+	}
+	
+}
+}

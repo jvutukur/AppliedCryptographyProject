@@ -1,0 +1,16 @@
+
+public class Validate {
+
+	public static void main(String[] args) {
+	
+		char key='a';
+		char msg='b';
+		int i=key^msg;
+		System.out.println(key^msg);
+		System.out.println(i);
+		
+		StringBuilder sb = new StringBuilder();
+		sb.append(key);
+		
+}
+}

@@ -1,0 +1,32 @@
+import java.io.FileInputStream;
+import java.security.cert.CertificateFactory;
+import java.security.cert.X509Certificate;
+//import java.security.PublicKey;
+//import java.security.PublicKey;
+
+public class PrintCertificate {
+
+	public static void main(String[] args) {
+		try {
+			FileInputStream raghucertificatefis = new FileInputStream("Raghupub.cer");
+			CertificateFactory raghucf = CertificateFactory.getInstance("X509");
+			X509Certificate raghucer = (X509Certificate) raghucf.generateCertificate(raghucertificatefis);
+			System.out.println("\tCertificate for: " + raghucer.getSubjectDN());
+			System.out.println("\tCertificate issued by: " + raghucer.getIssuerDN());
+			System.out.println("\tThe certificate is valid from "
+					+ c.getNotBefore() + " to " + raghucer.getNotAfter());
+			System.out.println("\tCertificate SN# " + c.getSerialNumber());
+			System.out.println("\tGenerated with " + c.getSigAlgName());
+			//String publicKeyInHex=Long.toHexString(c.getPublicKey().p);
+		
+			System.out.println("Public Key of Raghu "+c.getPublicKey());
+			System.out.println("Public key of CA");
+			
+			
+			FileInputStream CAfis= new FileInputStream("TrustCenter.cer");
+			
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+}
